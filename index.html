@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookMaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="displayInfo()">
+    <div class="row">
+        <div class="col-12">
+            
+                <div class="siteInfo">
+                    <h2 class="head">Bookmaker  | <p class="head1"> Save Your Favourite Sites</p></h2>
+                    <hr>
+                    <form id="siteData">
+                        <input type="text" id="siteName" placeholder="Enter Site Name"><br>
+                        <input type="text" id="siteUrl" placeholder="Enter Site URL"><br>
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                    <hr>
+                </div>
+                
+                <div id="savedInfo"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

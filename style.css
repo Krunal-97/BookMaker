@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+[class*="col-"] {
+    float: left;
+  }
+  .col-12 {width: 100%;}
+
+.row {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.siteInfo {
+    text-align: center;
+}
+
+.head {
+    font-weight: normal;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    padding: 7px 15px;
+    margin-top: 20px;
+}
+.head1 {
+    display: inline;
+    font-size: 20px;
+}
+.siteInfo input:first-child {
+    margin-top: 30px;
+}
+.siteInfo input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.siteInfo #submit {
+    width:130px;
+    height: 35px;
+    padding-left: 0px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.displayName {
+    position: relative;
+    background-color: #e6e6e6;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin:5px 0;
+}
+.displayName .name {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.visit {
+    position: absolute;
+    right: 100px;
+    background-color: #3366ff;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 0 4px;
+}
+.delete {
+    position: absolute;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 0 4px;
+}
+@media only screen and (max-width: 600px) {
+    .row {
+        position: static;
+        left: 50%;
+        transform: none;
+    }
+    .head {
+        padding: 3px 0;
+        margin-top: 0;
+    }
+    
+    .head1 {
+        
+        font-size: 15px;
+    }
+    .siteInfo input:first-child {
+        margin-top: 15px;
+    }
+    .siteInfo input {
+        width: 200px;
+        height: 26px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .siteInfo #submit {
+        width:80px;
+        height: 30px;
+        padding-left: 0px;
+        
+    }
+    .displayName .name {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .visit, .delete{
+        
+        padding: 2px 5px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0 0px;
+    }
+  }
